@@ -64,7 +64,7 @@ const AddAttendance = () => {
     useEffect(() => {
         const checkAttendanceStatus = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/attendance/status/${id}`, {
+                const response = await axios.get(`https://employeems-server-psi.vercel.app/api/attendance/status/${id}`, {
                     headers: {
                         "Authorization": `Bearer ${getToken()}`,
                     },
@@ -83,7 +83,7 @@ const AddAttendance = () => {
 
     const handleCheckIn = async () => {
         try {
-            const response = await axios.post("http://localhost:5000/api/attendance/checkin", {}, {
+            const response = await axios.post("https://employeems-server-psi.vercel.app/api/attendance/checkin", {}, {
                 headers: {
                     "Authorization": `Bearer ${getToken()}`,
                 },
@@ -98,7 +98,7 @@ const AddAttendance = () => {
 
     const handleCheckOut = async () => {
         try {
-            const response = await axios.post("http://localhost:5000/api/attendance/checkout", {}, {
+            const response = await axios.post("https://employeems-server-psi.vercel.app/api/attendance/checkout", {}, {
                 headers: {
                     "Authorization": `Bearer ${getToken()}`,
                 },

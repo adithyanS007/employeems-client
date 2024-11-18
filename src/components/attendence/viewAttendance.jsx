@@ -13,7 +13,7 @@ const ViewAttendance = () => {
 
     const fetchAttendances = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/api/attendance/${id}`, {
+            const response = await axios.get(`https://employeems-server-psi.vercel.app/api/attendance/${id}`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                 },
