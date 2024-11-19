@@ -22,7 +22,7 @@ const DepartmentList = () => {
         const fetchDepartments = async () =>{
             setDepLoading(true)
             try {
-                const response = await axios.get('https://employeems-server-psi.vercel.app/api/department', {
+                const response = await axios.get('https://employeems-server-eta.vercel.app/api/department', {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('token')}`
                     }

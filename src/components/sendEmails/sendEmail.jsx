@@ -18,7 +18,7 @@ const SendEmail = () => {
         e.preventDefault();
         setLoading(true); // Set loading to true
         try {
-            await axios.post("https://employeems-server-psi.vercel.app/api/notify/send-email", formData);
+            await axios.post("https://employeems-server-eta.vercel.app/api/notify/send-email", formData);
             alert("Email sent successfully");
             console.log(formData)
         } catch (error) {

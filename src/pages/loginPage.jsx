@@ -16,7 +16,7 @@ const LoginPage = () => {
         e.preventDefault();
         try {
             const response = await axios.post(
-                "https://employeems-server-psi.vercel.app/api/auth/login", 
+                "https://employeems-server-eta.vercel.app/api/auth/login", 
                 { email, password }
             );
             console.log("Response: ", response.data); // Log the response

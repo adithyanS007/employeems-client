@@ -17,7 +17,7 @@ const AddDepartment = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-           const response = await axios.post('https://employeems-server-psi.vercel.app/api/department/add', department, {
+           const response = await axios.post('https://employeems-server-eta.vercel.app/api/department/add', department, {
             headers: {
               Authorization : `Bearer ${localStorage.getItem('token')}`
             }
